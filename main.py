@@ -1,8 +1,7 @@
-#   a117_traversing_turtles.py
-#   Add code to make turtles move in a circle and change colors.
+
 import turtle as trtl
 trtl.speed(0)
-# create an empty list of turtles
+
 
 class Turtles:
   turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "classic","arrow", "turtle", "circle", "square", "triangle", "classic"]
@@ -12,7 +11,7 @@ class Turtles:
     self.my_turtles = []
 
 
-  #adds shapes to my_turtle list by iterating through the shapes list
+
   def draw(self):
     for s in self.turtle_shapes:
       t = trtl.Turtle(shape=s)
@@ -23,7 +22,7 @@ class Turtles:
     starty = 0
     heading = 0
     move = 50
-    #for each shape added to the my_turtle list it goes to the starting position and creates the following drawing
+    
     for t in self.my_turtles:
       tcolor = self.turtle_colors.pop()
       t.penup()
@@ -37,7 +36,7 @@ class Turtles:
       t.forward(move)
       t.end_fill()
 
-    #	updates the positional variables for new starting locations
+   
       startx = t.xcor()
       starty = t.ycor()
       heading  = t.heading()
