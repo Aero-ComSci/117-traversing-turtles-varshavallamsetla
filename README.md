@@ -31,7 +31,7 @@ Step 18
 
 ## Questions about the Activity as you work. 
 ```
-
+How do I customize the shapes and colors of the turtles in the program?
 ```
 #### Description Of The App 
 
